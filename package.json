@@ -1,0 +1,30 @@
+{
+  "name": "sftp-deployment-kit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cy920820/sftp-deployment-kit.git"
+  },
+  "keywords": [
+    "ftp",
+    "sftp",
+    "plugin",
+    "webpack",
+    "deploy"
+  ],
+  "author": "Cui Yang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cy920820/sftp-deployment-kit/issues"
+  },
+  "homepage": "https://github.com/cy920820/sftp-deployment-kit#readme"
+}
