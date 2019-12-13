@@ -1,14 +1,17 @@
 {
   "name": "sftp-deployment-kit",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "bin": {
+    "deploy": "bin/deploy"
+  },
   "directories": {
     "example": "examples",
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -26,5 +29,11 @@
   "bugs": {
     "url": "https://github.com/cy920820/sftp-deployment-kit/issues"
   },
-  "homepage": "https://github.com/cy920820/sftp-deployment-kit#readme"
+  "homepage": "https://github.com/cy920820/sftp-deployment-kit#readme",
+  "dependencies": {
+    "async": "^3.1.0"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
 }
