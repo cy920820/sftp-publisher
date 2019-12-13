@@ -11,8 +11,12 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint --ext .js lib"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cy920820/sftp-deployment-kit.git"
@@ -34,6 +38,13 @@
     "async": "^3.1.0"
   },
   "devDependencies": {
-    "jest": "^24.9.0"
+    "eslint": "^6.7.2",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^24.9.0",
+    "pre-commit": "^1.2.2"
   }
 }
