@@ -1,10 +1,10 @@
 {
-  "name": "sftp-deployment-kit",
+  "name": "sftp-publisher",
   "version": "0.1.0",
   "description": "",
   "main": "lib/index.js",
   "bin": {
-    "deploy": "bin/deploy"
+    "publish": "bin/publish"
   },
   "directories": {
     "example": "examples",
@@ -12,14 +12,16 @@
   },
   "scripts": {
     "test": "jest",
+    "fix": "eslint --ext .js lib --fix",
     "lint": "eslint --ext .js lib"
   },
   "pre-commit": [
+    "fix",
     "lint"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cy920820/sftp-deployment-kit.git"
+    "url": "git+https://github.com/cy920820/sftp-publisher.git"
   },
   "keywords": [
     "ftp",
@@ -31,11 +33,16 @@
   "author": "Cui Yang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cy920820/sftp-deployment-kit/issues"
+    "url": "https://github.com/cy920820/sftp-publisher/issues"
   },
-  "homepage": "https://github.com/cy920820/sftp-deployment-kit#readme",
+  "homepage": "https://github.com/cy920820/sftp-publisher#readme",
   "dependencies": {
-    "async": "^3.1.0"
+    "async": "^3.1.0",
+    "chalk": "^3.0.0",
+    "commander": "^4.0.1",
+    "glob": "^7.1.6",
+    "minimatch": "^3.0.4",
+    "scp2": "^0.5.0"
   },
   "devDependencies": {
     "eslint": "^6.7.2",
