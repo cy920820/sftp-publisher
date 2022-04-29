@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/cy920820/sftp-publisher#readme",
   "dependencies": {
-    "async": "^3.1.0",
+    "async": "^3.2.2",
     "chalk": "^3.0.0",
     "commander": "^4.0.1",
     "glob": "^7.1.6",
